@@ -12,6 +12,10 @@ getFullName(p2); // => 'Charlie Brown'
 
 function getFullName(person) {
   // Your code here 
+  // we had combined the first name and last together to create a full name.
+  let fullName = person.firstName + ' ' + person.lastName;
+// we had returned the Full name 
+  return fullName;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

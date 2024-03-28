@@ -13,6 +13,16 @@ console.log(arrayConverter(["apple", "banana", "potato", "banana"])); // => {app
 
 function arrayConverter(array) {
   // Your code here 
+  const countObj = {}; // we initialized an empty object to store counts
+
+for (let element of array) { // we interated through each element in the array 
+  if (countObj[element] === undefined) { // we had check if the element exist as a key in the count object
+  countObj[element] = 1; // If the element is not the count object then we are going to intilize its count 1
+} else {
+  countObj[element]++; // If the element is already in the count object, increment its count.
+  }
+}
+return countObj; //last but not least return the count object 
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

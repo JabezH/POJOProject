@@ -12,6 +12,11 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 
 function valuePair(obj1, obj2, key) {
   // Your code here 
+  //we got the value corresponding to the key of each object.
+  const value1 = obj1[key];
+  const value2 = obj2[key];
+//we are going to return the arrays containing the values.
+  return [value1, value2];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

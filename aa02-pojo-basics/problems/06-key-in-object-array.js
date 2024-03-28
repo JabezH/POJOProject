@@ -21,6 +21,12 @@ keyInObjectArray(objArray, 'animal'); // => false
 
 function keyInObjectArray(objArray, keyString) {
   // Your code here 
+  for (let obj of objArray) { //Iterate through each string in the array.
+    if(keyString in obj) {// we going to check if the string is found the object.
+      return true //If it is found then we are going to return it true.
+    }
+  }
+  return false; //if a string is not found in any object then we are going to return it false.
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

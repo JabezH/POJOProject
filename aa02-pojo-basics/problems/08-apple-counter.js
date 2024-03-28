@@ -30,6 +30,15 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // Your code here 
+  //we converted all keys to lowercase for easier searching 
+  const keys = Object.keys(appleObj).map(key => key.toLowerCase()) 
+  let count = 0;
+  for (let key of keys) {  //we iterated through each key in the array of keys 
+    if (key.includes('apple')) {  //Had checked if the keys contains apples
+      count++;
+    }
+  }
+  return count; //last but not least returned the count of keys containing 'apple'
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

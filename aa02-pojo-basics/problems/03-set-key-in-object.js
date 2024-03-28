@@ -15,6 +15,10 @@ setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
 
 function setKeyInObject(obj, string, value) {
   // Your code here 
+  //we Add a key pair to the object
+  obj[string] = value;
+//we had return the updated object
+  return obj;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
